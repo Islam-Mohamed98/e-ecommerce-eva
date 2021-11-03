@@ -1,0 +1,7 @@
+=======================
+== Function Document ==
+=======================
+
+
+
+sqlGlobal ($event, $fetch='fetch', $parameters = null, $type = null)

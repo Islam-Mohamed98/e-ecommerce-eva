@@ -1,0 +1,522 @@
+@font-face { font-family: roboto-regular; src: url('../Dosis/Dosis-Light.ttf'); }
+
+body {font-family: 'Dosis', sans-serif;}
+
+ul {list-style: none;}
+
+/* Global Css */
+.overlay-b {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.85;
+	z-index: 1;
+}
+
+/* start infodiv */
+.infodiv {
+	background-image: url("../images/black-friday-fashion-friends-1345082.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+	padding: 100px 0;
+}
+
+.infodiv .container {
+    position: relative;
+    z-index: 2;
+    color: #E1DBDB;
+		margin-bottom: 25px;
+}
+
+.infodiv h5 {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.infodiv h6 {
+		font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+		text-align: right;
+}
+/* End infodiv */
+
+/* start admin-login */
+.login-admin {
+	position: relative;
+	padding: 200px 0;
+}
+
+.loginformdiv {
+	margin: 0 auto;
+	width: 300px;
+}
+
+.loginformdiv::after {
+  content: "";
+  background-color: white;
+	z-index: 1;
+	transform: rotate(45deg)  translateY(-50%);
+  width: 25px;
+	height: 25px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+}
+
+.loginformdiv > a {
+    color: #777777;
+    border: 1px solid transparent;
+    padding: 5px 26px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.loginformdiv >a.active {
+	    border: 1px solid #777777;
+}
+
+.loginformdiv form input {
+    color: #777777 !important;
+    border-radius: 0;
+    font-size: 14px;
+    border: 1px solid #777777;
+}
+
+.loginformdiv form button {
+    color: white;
+    border: 1px solid 333333;
+    padding: 5px 26px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+		background-color: #333333;
+		border-radius: 0;
+}
+/* End admin-login */
+
+
+
+/* start nav */
+ul.dashboard-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  background-color: #282733;
+  position: fixed;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+ul.dashboard-nav li:first-child {
+    padding: 30px;
+    letter-spacing: 0.2em;
+    color: white;
+    font-size: 17px;
+}
+
+ul.dashboard-nav li svg {
+    margin-right: 10px;
+}
+
+
+ul.dashboard-nav li a {
+  display: block;
+  color: #ffffff;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+ul.dashboard-nav li a.active {
+  background-color: #db1430;
+  color: #ffffff;
+  position: relative;
+}
+
+ul.dashboard-nav li a.active::after  {
+    content: "";
+    height: 100px;
+    width: 100px;
+    background: white;
+    position: absolute;
+    left: 99%;
+    z-index: 999;
+    transform: rotate(45deg);
+    top: -66%;
+}
+
+ul.dashboard-nav li a:hover:not(.active) {
+  background-color: #555;
+  color: #ffffff;
+}
+/* End nav */
+
+/* Start Dashboard */
+.dashboard-main {
+  width: 85%;
+  overflow-x: hidden;
+}
+/*End Dashboard */
+
+
+/* Start BootStrap Edit */
+
+.form-control {
+    position:relative;
+}
+
+
+/* Start DashBoard Page */
+
+.home-stats .stat {
+
+    color:white;
+    border-radius:10px;
+    padding:50px;
+    font-size:15px;
+    position:relative;
+    overflow:hidden;
+
+}
+
+.home-stats .row svg {
+    font-size: 67px;
+    top: 68px;
+    left: 20px;
+    position: absolute;
+}
+
+.home-stats .stat .info {
+    float: right;
+}
+
+.home-stats .stat a {
+    color:white;
+}
+
+.home-stats .stat a:hover {
+
+    text-decoration: none;
+}
+
+.home-stats .stat span {
+    display:block;
+    font-size:50px;
+}
+
+.home-stats .st-members {
+
+    background-color:#3498db;
+}
+
+.home-stats .st-pending {
+
+    background-color:#c0392b;
+}
+
+.home-stats .st-items {
+
+    background-color:#8e44ad;
+}
+
+.home-stats .st-comments {
+
+    background-color:#e67e22;
+}
+
+.latest {
+    margin-top:30px;
+}
+
+.latest .comment-box {
+    margin: 5px 0 10px;
+}
+
+.latest .comment-box .member-n,
+.latest .comment-box .member-c{
+ float:left;
+}
+
+.latest .comment-box .member-n{
+    width:80px;
+    text-align:center;
+    margin-right:20px;
+}
+
+.latest .comment-box .member-c{
+    width:calc(100% - 100px);
+}
+
+.latest .comment-box p {
+    background-color:#ffffff82;
+    padding:10px;
+    position:relative;
+}
+
+.latest .comment-box .member-c:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -1px;
+    left: -34px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent #ddf6ef transparent transparent;
+    border-width: 22px;
+}
+
+.latest .toggle-info {
+    color:#999;
+    cursor:pointer;
+}
+
+.latest .toggle-info:hover {
+    color:#444;
+}
+
+.latest-users {
+    margin-bottom: 0;
+}
+
+.latest-users li {
+    padding:5px 10px ;
+    overflow:hidden;
+}
+
+.latest-users li  a {
+    color:white;
+}
+
+.latest-users li  a:hover {
+
+    text-decoration: none;
+}
+
+.card-default {
+    border-color: #0c0c0c4a;
+    background-color:#ffffff4a;
+}
+
+
+
+.latest-users li:nth-child(even){
+    background-color:#ffffff82;
+}
+
+
+
+
+.latest-users li .btn-danger{
+   padding: 1px 3px;
+}
+
+.latest-users li .btn-primary,
+.latest-users li .btn-success{
+   padding: 1px 3px;
+    margin-right: 4px;
+}
+
+/* End DashBoard Page */
+
+
+
+/* Start Members Page Edit */
+
+
+h1 {
+    font-size:45px;
+    margin:40px 0;
+    font-weight:bold;
+    color:#5d5d5d;
+}
+
+form.login .alert {
+    padding: 5px 13px;
+    margin-bottom: 7px;
+    /* margin-left: 0; */
+    /* border: 1px solid transparent; */
+    /* border-radius: 4px; */
+    width: 100%;
+    /* float: left; */
+}
+
+.show-pass {
+    position: absolute;
+    top: 8px;
+    right: -8px;
+}
+
+.mange-members img {
+
+    width:50px;
+    height:50px;
+
+}
+
+.main-table {
+    -webkit-box-shadow: 0 3px 10px #5a5959;
+    -o-box-shadow: 0 3px 10px #5a5959;
+    -moz-box-shadow: 0 3px 10px #5a5959;
+    box-shadow: 0 3px 10px #5a5959;
+}
+
+.main-table td{
+    background-color:#ffffff94;
+        vertical-align: middle !important;
+}
+
+.main-table tr:first-child td {
+
+    background-color:#333;
+    color:#FFF;
+
+}
+
+.main-table .btn {
+
+    padding: 3px 10px;
+}
+
+
+.fa-edit {
+
+    position: relative;
+    right: 2px;
+}
+
+.fa-times{
+
+    position: relative;
+    top: 0.5px;
+    right: 2px;
+}
+
+.fa-plus {
+    position: relative;
+    right: 5px;
+}
+
+.activate {
+    margin-left: 5px;
+}
+/* End Members Page Edit */
+
+/* Start Category Page */
+
+.categories .card-body {
+    padding: 0;
+}
+
+.categories .option a {
+    color:#888;
+    text-decoration: none;
+}
+
+.categories .option span {
+    color:#888;
+    cursor: pointer;
+}
+
+.categories .option .active {
+    color:darkorchid;
+
+}
+
+.categories .cat {
+
+    padding:15px;
+    position:relative;
+    overflow:hidden;
+}
+
+.categories .cat .hidden-buttons {
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    position: absolute;
+    top:15px;
+    right:-120px;
+}
+.categories .cat .hidden-buttons a {
+    margin-right:4px;
+}
+
+.categories .cat:hover .hidden-buttons {
+    right:10px;
+}
+
+.categories .cat:hover {
+    background-color:#00000061;
+    color:white;
+}
+
+.categories .card {
+    margin-bottom:0;
+}
+
+.categories .card-heading {
+    color:#959595;
+    font-weight:bold;
+}
+
+.categories .card-heading .fa-edit {
+    top: -2px;
+}
+
+
+
+.categories .cat h3 {
+
+    margin: 0 0 10px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+
+
+.categories .cat:last-of-type ~ hr {
+
+    display:none;
+}
+
+.categories hr {
+
+    border-top: 1px solid #9c9c9c4f;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+.Visiability{
+    padding: 3px 10px;
+}
+.comment,
+.adver{
+    padding: 1px 5px;
+    margin-left:4px;
+    margin-top: 4px;
+}
+
+.categories .add-category  {
+    margin-top: 10px;
+}
+
+/* End Category Page */
